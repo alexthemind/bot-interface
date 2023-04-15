@@ -69,7 +69,7 @@ export default {
 
             this.writeUserMessages(inputMessage.value);
 
-            fetch('http://localhost:8000/chat-bot',{
+            fetch('https://chat-bot-production-3117.up.railway.app/chat-bot',{
                 method: 'POST',
                 body: JSON.stringify({
                     session_id: session_id,
